@@ -1,5 +1,4 @@
 # Implementaion using list
-
 queue = []
 
 queue.append('a')
@@ -15,7 +14,6 @@ print(queue.pop(0)) # 'c'
 print("="*40)
 
 # Implementation using collections.deque
-
 from collections import deque
 
 q = deque()
@@ -33,7 +31,6 @@ print(q.popleft()) # 'c'
 print("="*40)
 
 # Implementation using queue.Queue
-
 from queue import Queue
 
 q = Queue(maxsize=3)

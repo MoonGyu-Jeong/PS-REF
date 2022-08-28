@@ -1,5 +1,4 @@
 # Implementation by List
-
 stack = []
 
 stack.append('a')
@@ -16,7 +15,6 @@ print(stack.pop()) # 'a'
 print("="*40)
 
 # Implementation by collections.deque
-
 from collections import deque
 
 stack = deque()
@@ -35,7 +33,6 @@ print(stack.pop()) # 'a'
 print("="*40)
 
 # Implementation by queue.LifoQueue
-
 from queue import LifoQueue
 
 stack = LifoQueue(3)
@@ -58,7 +55,6 @@ print(f"Empty: {stack.empty()}")
 print("="*40)
 
 # Implementation using a singly linked list
-
 class Node:
     def __init__(self, value):
         self.value = value
