@@ -31,3 +31,25 @@ heapq.heapify(li3)
 print(f'The 3 largest numbers in list are: {heapq.nlargest(3, li3)}')
 
 print(f'The 3 smallest numbers in list are: {heapq.nsmallest(3, li3)}')
+print('='*50)
+
+heap = []
+heapq.heapify(heap)
+
+heapq.heappush(heap, -1*10)
+heapq.heappush(heap, -1*30)
+heapq.heappush(heap, -1*20)
+heapq.heappush(heap, -1*400)
+
+print(f'Head value of heap: {str(-1 * heap[0])}')
+
+print("The heap elements: ")
+for i in heap:
+    print((-1*i), end=" ")
+print('\n')
+
+element = heapq.heappop(heap)
+
+print("The heap elements: ")
+for i in heap:
+    print(-1*i, end=' ')
